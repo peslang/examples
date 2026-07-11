@@ -1,0 +1,54 @@
+// Интерполяция строк: % (ВСтроку), $ (Представление), ${выражение|формат}.
+// Спецификация: spec/StringInterpolation.md, spec/Formattable.md
+//
+// Сборка и запуск:
+//   dotnet run --project examples/stringinterpolation/stringinterpolation.psproj
+
+импорт System
+
+структура Цена
+    обз пер Сумма: Число
+    обз пер Валюта: Строка
+
+    метод ВСтроку(): Строка
+        возврат Сумма + " " + Валюта
+    ;
+
+    метод Представление(пер format: Строка): Строка
+        возврат format + " → " + Сумма + " " + Валюта
+    ;
+;
+
+класс Метка
+    обз пер Текст: Строка
+
+    конструктор(текст: Строка)
+        Текст = текст
+    ;
+
+    метод Представление(пер format: Строка): Строка
+        возврат "[${format}] ${Текст}"
+    ;
+;
+
+пер дата: Дата = Дата{20240615}
+пер цена: Цена = новый Цена(12345, "RUB")
+пер метка: Метка = новый Метка("доставка")
+пер удвоенная: Число = 12345 * 2
+
+System.Console.WriteLine("=== % — без формата (ВСтроку) ===")
+System.Console.WriteLine("Сумма: %цена")
+System.Console.WriteLine("Удвоено: %удвоенная")
+
+System.Console.WriteLine("")
+System.Console.WriteLine("=== $ — Представление (с форматом и без) ===")
+System.Console.WriteLine("Дата: ${дата|yyyy-MM-dd}")
+System.Console.WriteLine("Число: ${12345|N0}")
+System.Console.WriteLine("Структура: $цена")
+System.Console.WriteLine("Структура с форматом: ${цена|компакт}")
+System.Console.WriteLine("Класс: ${метка|INFO}")
+
+System.Console.WriteLine("")
+System.Console.WriteLine("=== null / Неопределено → пустая строка ===")
+пер пусто: Строка?
+System.Console.WriteLine("«%пусто»")

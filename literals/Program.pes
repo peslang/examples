@@ -1,0 +1,25 @@
+// Литералы.
+// prespecs: literals, multiline-literals, boolean-type, number-type, bytes-type
+
+импорт System
+
+пер целое: Число = 42
+пер дробное: Число = 314 / 100
+пер шестнадц: Число = 0xFF
+пер двоичн: Число = 0b1010
+
+пер истина: Булево = Истина
+пер ложь: Булево = Ложь
+пер неопр: Объект? = Неопределено
+
+пер простая: Строка = "Привет, Пес!"
+пер сЭкранированием: Строка = "строка\nс переводом"
+пер многострочная: Строка = " первая\nвторая\n  третья"
+
+// Байты{...} — в prespecs; codegen литерала BytesLiteralValue пока не реализован (см. spec/Encodings.md)
+
+System.Console.WriteLine("числа: ${целое}, ${дробное}, hex=${шестнадц}, bin=${двоичн}")
+System.Console.WriteLine("булево: ${истина}/${ложь}, null=${неопр == Неопределено}")
+System.Console.WriteLine(простая)
+System.Console.WriteLine(сЭкранированием)
+System.Console.WriteLine(многострочная)

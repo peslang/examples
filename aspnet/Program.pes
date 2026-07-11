@@ -1,0 +1,37 @@
+// Minimal API health endpoint — спецификация O-24 / AspNetInterop.md
+// prespecs: aspnet-interop
+
+импорт System
+импорт System::Threading
+импорт Microsoft::AspNetCore::Builder
+импорт Microsoft::AspNetCore::Hosting
+импорт Microsoft::AspNetCore::Http
+импорт Microsoft::Extensions::Hosting
+
+@Глобально
+класс EchoRequest
+    @Глобально
+    пер Text: Строка
+;
+
+пер builder = WebApplication.CreateBuilder(Environment.GetCommandLineArgs())
+пер app = builder.Build()
+
+app.UseDefaultFiles()
+app.UseStaticFiles()
+app.MapGet("/health", &Health)
+app.MapPost("/api/run", &Echo)
+
+app.Run()
+
+метод Health(): Строка
+    возврат "ok"
+;
+
+метод Echo(тело: EchoRequest): IResult
+    если String.IsNullOrWhiteSpace(тело.Text)
+        возврат Results.BadRequest("пусто")
+    ;
+    возврат Results.Ok(тело.Text)
+;
+

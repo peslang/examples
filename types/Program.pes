@@ -1,0 +1,20 @@
+// Специальные типы и nullable.
+// prespecs: undefined-type, uuid-type, unknown-type, getting-instance-type, types-and-their-hierarchy
+// Ууид — см. prespecs/uuid-type.txt (литерал и тип пока не полностью в codegen).
+
+импорт System
+
+пер м1: Массив<Число> = новый Массив<Число>()
+пер м2: Массив<Число>?
+пер м3: Массив<Число> = []
+пер м4 = [1]
+м4.Add(2)
+
+пер объект: Объект = "строка"
+пер этоСтрока: Булево = объект это Строка
+
+System.Console.WriteLine("GetType=${м1.GetType()}")
+System.Console.WriteLine("null=${м2 == Неопределено}, пустой=${м3}, list=${м4}")
+System.Console.WriteLine("это Строка=${этоСтрока}")
+
+// неизвестно, never — см. prespecs/unknown-type.txt, never-type.txt
