@@ -42,16 +42,16 @@
     ;
 ;
 
-System.Console.WriteLine("=== успех ===")
-System.Console.WriteLine(БезопасноУдвоить(9))
+System::Console.WriteLine("=== успех ===")
+System::Console.WriteLine(БезопасноУдвоить(9))
 
-System.Console.WriteLine("")
-System.Console.WriteLine("=== перехват ===")
-System.Console.WriteLine(БезопасноУдвоить(-1))
+System::Console.WriteLine("")
+System::Console.WriteLine("=== перехват ===")
+System::Console.WriteLine(БезопасноУдвоить(-1))
 
-System.Console.WriteLine("")
+System::Console.WriteLine("")
 попытка
     ПроверитьДиапазон(150, 0, 100)
 поймать e: Исключение
-    System.Console.WriteLine("Исключение: ${e.Описание}")
+    System::Console.WriteLine("Исключение: ${e.Описание}")
 ;

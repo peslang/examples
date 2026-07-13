@@ -22,12 +22,12 @@
         пер книги = ["Синтаксис"]
         книги.Add("Codegen")
         область
-            System.Console.WriteLine("книги=${книги}")
+            System::Console.WriteLine("книги=${книги}")
         ;
     ;
 ;
 
-System.Console.WriteLine("версия=${Версия}, сумма=${ПолучитьСумму()}")
-System.Console.WriteLine(Приветствие("мир"))
-System.Console.WriteLine("удвоить=${Удвоить(21)}")
+System::Console.WriteLine("версия=${Версия}, сумма=${ПолучитьСумму()}")
+System::Console.WriteLine(Приветствие("мир"))
+System::Console.WriteLine("удвоить=${Удвоить(21)}")
 ДемоОбласть()

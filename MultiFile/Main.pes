@@ -4,6 +4,6 @@
 пер a: Число = 10
 пер b: Число = 32
 
-System.Console.WriteLine(Приветствие("Пес"))
-System.Console.WriteLine(Сумма(a, b))
-System.Console.WriteLine(Удвоить(a))
+System::Console.WriteLine(Приветствие("Пес"))
+System::Console.WriteLine(Сумма(a, b))
+System::Console.WriteLine(Удвоить(a))

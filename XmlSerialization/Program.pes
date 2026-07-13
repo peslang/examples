@@ -123,20 +123,20 @@
 
 пер xml = Сериализовать(книга)
 
-System.Console.WriteLine("--- XML (с пространством имён lib) ---")
-System.Console.WriteLine(xml)
+System::Console.WriteLine("--- XML (с пространством имён lib) ---")
+System::Console.WriteLine(xml)
 
 // --- десериализация ---
 
 пер восстановленная = Десериализовать(xml, книга)
 
-System.Console.WriteLine("--- восстановлено --- ")
-System.Console.WriteLine(восстановленная.Id)
-System.Console.WriteLine(восстановленная.Название)
-System.Console.WriteLine(восстановленная.Автор)
-System.Console.WriteLine(восстановленная.ДатаИздания)
-System.Console.WriteLine(восстановленная.Издатель.Название)
-System.Console.WriteLine(восстановленная.Издатель.Город)
+System::Console.WriteLine("--- восстановлено --- ")
+System::Console.WriteLine(восстановленная.Id)
+System::Console.WriteLine(восстановленная.Название)
+System::Console.WriteLine(восстановленная.Автор)
+System::Console.WriteLine(восстановленная.ДатаИздания)
+System::Console.WriteLine(восстановленная.Издатель.Название)
+System::Console.WriteLine(восстановленная.Издатель.Город)
 для жанр из восстановленная.Жанры
-    System.Console.WriteLine(жанр)
+    System::Console.WriteLine(жанр)
 ;

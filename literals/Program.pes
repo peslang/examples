@@ -16,10 +16,12 @@
 пер сЭкранированием: Строка = "строка\nс переводом"
 пер многострочная: Строка = " первая\nвторая\n  третья"
 
-// Байты{...} — в prespecs; codegen литерала BytesLiteralValue пока не реализован (см. spec/Encodings.md)
+// Байты{...} и новый Байты("hex") — см. spec/Bytes.md
+пер mz = Байты{4d 5a}
+System::Console.WriteLine(mz[0])
 
-System.Console.WriteLine("числа: ${целое}, ${дробное}, hex=${шестнадц}, bin=${двоичн}")
-System.Console.WriteLine("булево: ${истина}/${ложь}, null=${неопр == Неопределено}")
-System.Console.WriteLine(простая)
-System.Console.WriteLine(сЭкранированием)
-System.Console.WriteLine(многострочная)
+System::Console.WriteLine("числа: ${целое}, ${дробное}, hex=${шестнадц}, bin=${двоичн}")
+System::Console.WriteLine("булево: ${истина}/${ложь}, null=${неопр == Неопределено}")
+System::Console.WriteLine(простая)
+System::Console.WriteLine(сЭкранированием)
+System::Console.WriteLine(многострочная)

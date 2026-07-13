@@ -31,6 +31,6 @@
 vals.Add(9)
 vals.Add(2)
 
-System.Console.WriteLine("скидка: ${РассчитатьЦенуСоСкидкой(1000, 10)}")
-System.Console.WriteLine("поиск: ${НайтиПоАртикулу(101, каталог)}")
-System.Console.WriteLine("макс=${Максимум(vals)}")
+System::Console.WriteLine("скидка: ${РассчитатьЦенуСоСкидкой(1000, 10)}")
+System::Console.WriteLine("поиск: ${НайтиПоАртикулу(101, каталог)}")
+System::Console.WriteLine("макс=${Максимум(vals)}")

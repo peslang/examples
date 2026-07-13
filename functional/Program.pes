@@ -22,9 +22,9 @@
     числа.Add(4)
     числа.Add(5)
 
-    System.Console.WriteLine(Удвоенные(числа))
-    System.Console.WriteLine(Чётные(числа))
-    System.Console.WriteLine(числа.КакПоследовательность().Преобразовать(&Удвоить).ВМассив())
+    System::Console.WriteLine(Удвоенные(числа))
+    System::Console.WriteLine(Чётные(числа))
+    System::Console.WriteLine(числа.КакПоследовательность().Преобразовать(&Удвоить).ВМассив())
 ;
 
 ДемоЛямбды()

@@ -32,15 +32,15 @@
     пер статус: СтатусЗадачи = СтатусЗадачи.ВРаботе
     выбор статус
     когда СтатусЗадачи.ВРаботе
-        System.Console.WriteLine("в работе")
+        System::Console.WriteLine("в работе")
     иначе
-        System.Console.WriteLine("другое")
+        System::Console.WriteLine("другое")
     ;
 ;
 
 пер файл = новый ОписаниеФайла(ИмяФайла = "app.exe", Исполняемый = Истина, РазмерФайла = 4096)
 пер продажа = новый Продажа(Товар = "Кружка", Количество = 2)
 
-System.Console.WriteLine(файл.Кратко())
-System.Console.WriteLine(продажа.ВСтроку())
+System::Console.WriteLine(файл.Кратко())
+System::Console.WriteLine(продажа.ВСтроку())
 ДемоПеречисление()

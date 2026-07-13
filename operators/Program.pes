@@ -8,28 +8,28 @@
 метод ДемоАрифметика(): ничто
     пер a: Число = 10
     пер b: Число = 3
-    System.Console.WriteLine("a+b=${a + b}, a**2=${a ** 2}, a%b=${a % b}")
+    System::Console.WriteLine("a+b=${a + b}, a**2=${a ** 2}, a%b=${a % b}")
     a = a + b
-    System.Console.WriteLine("после a=a+b: ${a}")
+    System::Console.WriteLine("после a=a+b: ${a}")
 ;
 
 метод ДемоЛогика(): ничто
     пер x: Булево = Истина
     пер y: Булево = Ложь
-    System.Console.WriteLine("и=${x и y}, или=${x или y}, не=${не x}")
+    System::Console.WriteLine("и=${x и y}, или=${x или y}, не=${не x}")
 ;
 
 метод ДемоЭто(объект: Объект): ничто
     если объект это Число
-        System.Console.WriteLine("это Число")
+        System::Console.WriteLine("это Число")
     иначе если объект это Строка
-        System.Console.WriteLine("это Строка")
+        System::Console.WriteLine("это Строка")
     ;
 ;
 
 метод ДемоКак(объект: Объект): ничто
     пер n: Число = объект как Число
-    System.Console.WriteLine("как Число: ${n + 1}")
+    System::Console.WriteLine("как Число: ${n + 1}")
 ;
 
 метод ДемоNullable(): ничто
@@ -37,7 +37,7 @@
     пер м2 = [1]
     м2.Add(2)
     // Операторы ?. / ! / ?? — см. prespecs; часть сценариев пока ограничена в codegen.
-    System.Console.WriteLine("м1 null=${м1 == Неопределено}, м2[1]=${м2[1]}")
+    System::Console.WriteLine("м1 null=${м1 == Неопределено}, м2[1]=${м2[1]}")
 ;
 
 метод ДемоНовыйИДоступ(): ничто
@@ -45,7 +45,7 @@
     пер year = dt.Year
     пер arr = [10]
     arr.Add(20)
-    System.Console.WriteLine("новый: ${year}, arr[1]=${arr[1]}")
+    System::Console.WriteLine("новый: ${year}, arr[1]=${arr[1]}")
 ;
 
 ДемоАрифметика()

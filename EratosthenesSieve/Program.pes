@@ -50,7 +50,7 @@
 ВычеркнутьСоставные(числа, вычеркнуто)
 пер простые = СобратьПростые(числа, вычеркнуто)
 
-System.Console.WriteLine("Простые числа от 2 до $Предел:")
+System::Console.WriteLine("Простые числа от 2 до $Предел:")
 для n из простые.КакПоследовательность()
-    System.Console.WriteLine(n)
+    System::Console.WriteLine(n)
 ;

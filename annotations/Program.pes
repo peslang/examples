@@ -22,21 +22,21 @@
 пер счётчик: Счётчик = новый Счётчик()
 счётчик.Сбросить()
 
-System.Console.WriteLine("=== видимость членов типа ===")
-System.Console.WriteLine(счётчик.Описание())
-System.Console.WriteLine(ПубличныйОтвет())
+System::Console.WriteLine("=== видимость членов типа ===")
+System::Console.WriteLine(счётчик.Описание())
+System::Console.WriteLine(ПубличныйОтвет())
 
-System.Console.WriteLine("")
-System.Console.WriteLine("=== @ИменованныеПараметры ===")
+System::Console.WriteLine("")
+System::Console.WriteLine("=== @ИменованныеПараметры ===")
 Настроить(метка = "режим", значение = 42)
-System.Console.WriteLine("Настроить(метка = \"режим\", значение = 42) — OK")
+System::Console.WriteLine("Настроить(метка = \"режим\", значение = 42) — OK")
 
-System.Console.WriteLine("")
-System.Console.WriteLine("=== @Устарело (warning при компиляции) ===")
+System::Console.WriteLine("")
+System::Console.WriteLine("=== @Устарело (warning при компиляции) ===")
 УстаревшаяНастройка("legacy", 1)
-System.Console.WriteLine("УстаревшаяНастройка вызвана — в diagnostics будет предупреждение")
+System::Console.WriteLine("УстаревшаяНастройка вызвана — в diagnostics будет предупреждение")
 
 // Ошибки компиляции (раскомментируйте для проверки):
 // счётчик.ВнутреннийСброс()           // @ВТипе — недоступно снаружи типа
-// System.Console.WriteLine(ВнутреннийКлюч())  // @Локально — другой файл
+// System::Console.WriteLine(ВнутреннийКлюч())  // @Локально — другой файл
 // Настроить("режим", 42)              // @ИменованныеПараметры — только именованные аргументы

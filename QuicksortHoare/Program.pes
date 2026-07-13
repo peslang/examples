@@ -57,11 +57,11 @@
     пер последний: Число = размер - 1
     для i = 0 по последний
         если i > 0
-            System.Console.Write(" ")
+            System::Console.Write(" ")
         ;
-        System.Console.Write(System.Convert.ToString(значения[i]))
+        System::Console.Write(System::Convert.ToString(значения[i]))
     ;
-    System.Console.WriteLine()
+    System::Console.WriteLine()
 ;
 
 пер генератор = новый Random()

@@ -13,8 +13,8 @@
 пер объект: Объект = "строка"
 пер этоСтрока: Булево = объект это Строка
 
-System.Console.WriteLine("GetType=${м1.GetType()}")
-System.Console.WriteLine("null=${м2 == Неопределено}, пустой=${м3}, list=${м4}")
-System.Console.WriteLine("это Строка=${этоСтрока}")
+System::Console.WriteLine("GetType=${м1.GetType()}")
+System::Console.WriteLine("null=${м2 == Неопределено}, пустой=${м3}, list=${м4}")
+System::Console.WriteLine("это Строка=${этоСтрока}")
 
 // неизвестно, never — см. prespecs/unknown-type.txt, never-type.txt

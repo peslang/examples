@@ -15,12 +15,12 @@
 
 метод Демо(): ничто
     пер xs = [1, 2, 3, 4, 5]
-    System.Console.WriteLine(xs.Count())
-    System.Console.WriteLine(xs.Where((x) -> x % 2 == 0).Count())
+    System::Console.WriteLine(xs.Count())
+    System::Console.WriteLine(xs.Where((x) -> x % 2 == 0).Count())
 
     пер n: Число = 7
-    System.Console.WriteLine(n.Удвоить())
-    System.Console.WriteLine(n.Удвоить().ПлюсОдин())
+    System::Console.WriteLine(n.Удвоить())
+    System::Console.WriteLine(n.Удвоить().ПлюсОдин())
 ;
 
 Демо()

@@ -11,8 +11,8 @@
 пер utc = Момент.UtcNow
 пер москва = ЧасоваяЗона{"Europe/Moscow"}
 
-System.Console.WriteLine("дата: ${деньРождения|yyyy-MM-dd}, ${изЧастей|дд.MM.гггг}")
-System.Console.WriteLine("время: ${полдень}")
-System.Console.WriteLine("датавремя: ${момент|yyyy-MM-dd HH:mm}")
-System.Console.WriteLine("момент+пауза: ${utc + пауза|yyyy-MM-dd HH:mm zzz}")
-System.Console.WriteLine("пояс: ${москва}")
+System::Console.WriteLine("дата: ${деньРождения|yyyy-MM-dd}, ${изЧастей|дд.MM.гггг}")
+System::Console.WriteLine("время: ${полдень}")
+System::Console.WriteLine("датавремя: ${момент|yyyy-MM-dd HH:mm}")
+System::Console.WriteLine("момент+пауза: ${utc + пауза|yyyy-MM-dd HH:mm zzz}")
+System::Console.WriteLine("пояс: ${москва}")

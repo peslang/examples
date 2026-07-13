@@ -69,26 +69,26 @@
         если i % 2 != 0
             продолжить
         ;
-        System.Console.Write("${i} ")
+        System::Console.Write("${i} ")
     ;
-    System.Console.WriteLine("")
+    System::Console.WriteLine("")
 ;
 
 пер данные = МассивИз(10, 20, 30)
 
-System.Console.WriteLine("=== если ===")
-System.Console.WriteLine(ПроверитьДлинуПароля("123"))
-System.Console.WriteLine(ПроверитьДлинуПароля("password_123"))
+System::Console.WriteLine("=== если ===")
+System::Console.WriteLine(ПроверитьДлинуПароля("123"))
+System::Console.WriteLine(ПроверитьДлинуПароля("password_123"))
 
-System.Console.WriteLine("")
-System.Console.WriteLine("=== выбор ===")
-System.Console.WriteLine(КатегорияВозраста(10))
-System.Console.WriteLine(КатегорияВозраста(42))
+System::Console.WriteLine("")
+System::Console.WriteLine("=== выбор ===")
+System::Console.WriteLine(КатегорияВозраста(10))
+System::Console.WriteLine(КатегорияВозраста(42))
 
-System.Console.WriteLine("")
-System.Console.WriteLine("=== пока / для / для из ===")
-System.Console.WriteLine("сумма=${СуммаПока(данные)}, 5!=${ФакториалДля(5)}, среднее=${СреднееИз(данные)}")
+System::Console.WriteLine("")
+System::Console.WriteLine("=== пока / для / для из ===")
+System::Console.WriteLine("сумма=${СуммаПока(данные)}, 5!=${ФакториалДля(5)}, среднее=${СреднееИз(данные)}")
 
-System.Console.WriteLine("")
-System.Console.WriteLine("=== прервать / продолжить ===")
+System::Console.WriteLine("")
+System::Console.WriteLine("=== прервать / продолжить ===")
 ДемоПрерватьПродолжить()

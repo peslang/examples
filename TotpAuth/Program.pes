@@ -8,7 +8,7 @@
 конст ЦифрКода = 6
 
 метод Целое(з: Число): Число
-    возврат System.Decimal.Truncate(з)
+    возврат System::Decimal.Truncate(з)
 ;
 
 метод СтепеньДва(степень: Число): Число
@@ -25,16 +25,16 @@
 ;
 
 метод СгенерироватьСекрет(): Строка
-    возврат System.Convert.ToBase64String(RandomNumberGenerator.GetBytes(20))
+    возврат System::Convert.ToBase64String(RandomNumberGenerator.GetBytes(20))
 ;
 
 метод СекретВBase32(секретBase64: Строка): Строка
-    пер данные = System.Convert.FromBase64String(секретBase64)
+    пер данные = System::Convert.FromBase64String(секретBase64)
     пер буфер = 0
     пер битов = 0
     пер результат = ""
     для i = 0 по ДлинаСекрета - 1
-        пер b = System.Convert.ToInt32(данные[i])
+        пер b = System::Convert.ToInt32(данные[i])
         буфер = буфер * 256 + b
         битов = битов + 8
         пока битов >= 5
@@ -60,11 +60,11 @@
 метод МоментВUnix(момент: Момент): Число
     пер epoch = Момент{19700101T000000Z}
     пер elapsed: Длительность = момент - epoch
-    возврат Целое(System.Convert.ToDecimal(elapsed.Ticks) / 10000000)
+    возврат Целое(System::Convert.ToDecimal(elapsed.Ticks) / 10000000)
 ;
 
 метод КодВСтроку(код: Число): Строка
-    пер текст = System.Convert.ToString(код)
+    пер текст = System::Convert.ToString(код)
     если код < 10
         возврат "00000" + текст
     ;
@@ -92,21 +92,21 @@
 ;
 
 метод ВычислитьКодПоСекрету(секретBase64: Строка, unix: Число): Число
-    пер ключ = System.Convert.FromBase64String(секретBase64)
+    пер ключ = System::Convert.FromBase64String(секретBase64)
     пер таймСчетчик: Число = Целое(unix / ИнтервалСекунд)
     исп ms = новый MemoryStream()
     исп writer = новый BinaryWriter(ms)
     для i = 7 вниз по 0
-        writer.Write(System.Convert.ToByte(БайтСчетчика(таймСчетчик, i)))
+        writer.Write(System::Convert.ToByte(БайтСчетчика(таймСчетчик, i)))
     ;
     пер payload = ms.ToArray()
     исп hmac = новый HMACSHA1(ключ)
     пер хеш = hmac.ComputeHash(payload)
-    пер смещение: Число = System.Convert.ToInt32(хеш[19]) % 16
-    пер b0: Число = System.Convert.ToInt32(хеш[смещение])
-    пер b1: Число = System.Convert.ToInt32(хеш[смещение + 1])
-    пер b2: Число = System.Convert.ToInt32(хеш[смещение + 2])
-    пер b3: Число = System.Convert.ToInt32(хеш[смещение + 3])
+    пер смещение: Число = System::Convert.ToInt32(хеш[19]) % 16
+    пер b0: Число = System::Convert.ToInt32(хеш[смещение])
+    пер b1: Число = System::Convert.ToInt32(хеш[смещение + 1])
+    пер b2: Число = System::Convert.ToInt32(хеш[смещение + 2])
+    пер b3: Число = System::Convert.ToInt32(хеш[смещение + 3])
     пер двоичный: Число = b0 % 128 * 16777216 + b1 * 65536 + b2 * 256 + b3
     возврат двоичный % 1000000
 ;
@@ -145,10 +145,10 @@
 
 пер сейчас: Момент = Момент.UtcNow
 
-System.Console.WriteLine("Секрет Base32:")
-System.Console.WriteLine(секретBase32)
-System.Console.WriteLine("URI подключения - " + uri)
+System::Console.WriteLine("Секрет Base32:")
+System::Console.WriteLine(секретBase32)
+System::Console.WriteLine("URI подключения - " + uri)
 
 для окно = -2 по 5
-    System.Console.WriteLine(" - " + КодВСтроку(тотп.ВычислитьКод(сейчас + 30с * окно)))
+    System::Console.WriteLine(" - " + КодВСтроку(тотп.ВычислитьКод(сейчас + 30с * окно)))
 ;

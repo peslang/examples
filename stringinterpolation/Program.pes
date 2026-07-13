@@ -36,19 +36,19 @@
 пер метка: Метка = новый Метка("доставка")
 пер удвоенная: Число = 12345 * 2
 
-System.Console.WriteLine("=== % — без формата (ВСтроку) ===")
-System.Console.WriteLine("Сумма: %цена")
-System.Console.WriteLine("Удвоено: %удвоенная")
+System::Console.WriteLine("=== % — без формата (ВСтроку) ===")
+System::Console.WriteLine("Сумма: %цена")
+System::Console.WriteLine("Удвоено: %удвоенная")
 
-System.Console.WriteLine("")
-System.Console.WriteLine("=== $ — Представление (с форматом и без) ===")
-System.Console.WriteLine("Дата: ${дата|yyyy-MM-dd}")
-System.Console.WriteLine("Число: ${12345|N0}")
-System.Console.WriteLine("Структура: $цена")
-System.Console.WriteLine("Структура с форматом: ${цена|компакт}")
-System.Console.WriteLine("Класс: ${метка|INFO}")
+System::Console.WriteLine("")
+System::Console.WriteLine("=== $ — Представление (с форматом и без) ===")
+System::Console.WriteLine("Дата: ${дата|yyyy-MM-dd}")
+System::Console.WriteLine("Число: ${12345|N0}")
+System::Console.WriteLine("Структура: $цена")
+System::Console.WriteLine("Структура с форматом: ${цена|компакт}")
+System::Console.WriteLine("Класс: ${метка|INFO}")
 
-System.Console.WriteLine("")
-System.Console.WriteLine("=== null / Неопределено → пустая строка ===")
+System::Console.WriteLine("")
+System::Console.WriteLine("=== null / Неопределено → пустая строка ===")
 пер пусто: Строка?
-System.Console.WriteLine("«%пусто»")
+System::Console.WriteLine("«%пусто»")

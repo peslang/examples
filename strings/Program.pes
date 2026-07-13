@@ -16,26 +16,26 @@
     пер пустая: Строка = ""
     пер литерал = "Пес sharp"
     пер путь = "C:\\temp\\data.txt"
-    System.Console.WriteLine("пустая='${пустая}', литерал=${литерал}")
-    System.Console.WriteLine("путь: ${путь}")
+    System::Console.WriteLine("пустая='${пустая}', литерал=${литерал}")
+    System::Console.WriteLine("путь: ${путь}")
 ;
 
 метод ДемоИндексация(текст: Строка): ничто
     пер последний: Число = 5
-    System.Console.WriteLine("[0]='${текст[0]}', [${последний}]='${текст[последний]}'")
+    System::Console.WriteLine("[0]='${текст[0]}', [${последний}]='${текст[последний]}'")
 ;
 
 метод ДемоКонкатенация(): ничто
     пер s = "  trim me  "
     пер result = "[" + s + "]"
-    System.Console.WriteLine("в скобках: ${result}")
+    System::Console.WriteLine("в скобках: ${result}")
 ;
 
 ДемоСоздание()
-System.Console.WriteLine("")
+System::Console.WriteLine("")
 ДемоИндексация("пример")
-System.Console.WriteLine("")
+System::Console.WriteLine("")
 ДемоКонкатенация()
-System.Console.WriteLine("")
+System::Console.WriteLine("")
 пер товар = новый Товар(Имя = "Кружка", Цена = 199)
-System.Console.WriteLine("ВСтроку: ${товар}")
+System::Console.WriteLine("ВСтроку: ${товар}")

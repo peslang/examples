@@ -1,6 +1,6 @@
 # Примеры языка Пес (публичные)
 
-Примеры для самостоятельной сборки через [Pes.NET.Sdk](https://www.nuget.org/packages/Pes.NET.Sdk) **0.1.3** с nuget.org.  
+Примеры для самостоятельной сборки через [Pes.NET.Sdk](https://www.nuget.org/packages/Pes.NET.Sdk) **0.1.5** с nuget.org.  
 SDK скачивается автоматически при сборке проекта.
 
 ## Требования

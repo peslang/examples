@@ -50,7 +50,7 @@
 пер b: Box<Число>
 пер h: Holder<Label>
 
-System.Console.WriteLine("число=${Тождество(числа[0])}, первый=${Первый(7, 9)}")
-System.Console.WriteLine("строка=${Тождество<Строка>(строки[0])}, map=${словарь[1]}")
-System.Console.WriteLine("ид=${Ид(42)}, accept=${Accept(новый Label("ok"))}")
-System.Console.WriteLine("макс=${числа.КакПоследовательность().Максимум()}")
+System::Console.WriteLine("число=${Тождество(числа[0])}, первый=${Первый(7, 9)}")
+System::Console.WriteLine("строка=${Тождество<Строка>(строки[0])}, map=${словарь[1]}")
+System::Console.WriteLine("ид=${Ид(42)}, accept=${Accept(новый Label("ok"))}")
+System::Console.WriteLine("макс=${числа.КакПоследовательность().Максимум()}")
