@@ -1,0 +1,6 @@
+импорт Gtk
+
+Application.Init()
+пер окно: ОкноКалькулятора = новый ОкноКалькулятора()
+окно.ShowAll()
+Application.Run()

@@ -1,0 +1,6 @@
+импорт Gtk
+
+Application.Init()
+пер окно: ГлавноеОкно = новый ГлавноеОкно()
+окно.ShowAll()
+Application.Run()

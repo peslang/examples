@@ -1,6 +1,6 @@
 # Примеры языка Пес (публичные)
 
-Примеры для самостоятельной сборки через [Pes.NET.Sdk](https://www.nuget.org/packages/Pes.NET.Sdk) **0.1.6** с nuget.org.  
+Примеры для самостоятельной сборки через [Pes.NET.Sdk](https://www.nuget.org/packages/Pes.NET.Sdk) **0.1.7** с nuget.org.  
 SDK скачивается автоматически при сборке проекта.
 
 ## Требования
@@ -55,6 +55,7 @@ dotnet run --project controlflow/controlflow.psproj
 | [`QuicksortHoare/`](QuicksortHoare/) | массивы, циклы |
 | [`async/`](async/) | асинхронность |
 | [`XmlSerialization/`](XmlSerialization/) | классы, сериализация |
+| [`HelloGtk/`](HelloGtk/), [`CalculatorGtk/`](CalculatorGtk/) | GTK, NuGet |
 | [`TotpAuth/`](TotpAuth/) | классы, исключения |
 | [`EratosthenesSieve/`](EratosthenesSieve/) | массивы, циклы |
 
