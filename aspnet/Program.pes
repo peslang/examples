@@ -28,7 +28,7 @@ app.Run()
     возврат "ok"
 ;
 
-метод Echo(тело: EchoRequest): IResult
+асинх метод Echo(тело: EchoRequest, отмена: CancellationToken): IResult
     если String.IsNullOrWhiteSpace(тело.Text)
         возврат Results.BadRequest("пусто")
     ;
