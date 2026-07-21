@@ -1,18 +1,16 @@
 // Дата и время.
 // prespecs: date-type, time-type, datetime-type, instant-type, duration-type, time-zone, formatting-datetime-values
 
-импорт System
-
 пер деньРождения = Дата{20250220}
 пер изЧастей = новый Дата(2025, 7, 9)
 пер полдень = новый Время(12, 30, 0)
 пер момент = ДатаВремя{20250709120000}
 пер пауза: Длительность = 10с
-пер utc = Момент.UtcNow
+пер utc = Момент.СейчасUtc
 пер москва = ЧасоваяЗона{"Europe/Moscow"}
 
-System::Console.WriteLine("дата: ${деньРождения|yyyy-MM-dd}, ${изЧастей|дд.MM.гггг}")
-System::Console.WriteLine("время: ${полдень}")
-System::Console.WriteLine("датавремя: ${момент|yyyy-MM-dd HH:mm}")
-System::Console.WriteLine("момент+пауза: ${utc + пауза|yyyy-MM-dd HH:mm zzz}")
-System::Console.WriteLine("пояс: ${москва}")
+Консоль.ЗаписатьСтроку("дата: ${деньРождения|yyyy-MM-dd}, ${изЧастей|дд.MM.гггг}")
+Консоль.ЗаписатьСтроку("время: ${полдень}")
+Консоль.ЗаписатьСтроку("датавремя: ${момент|yyyy-MM-dd HH:mm}")
+Консоль.ЗаписатьСтроку("момент+пауза: ${utc + пауза|yyyy-MM-dd HH:mm zzz}")
+Консоль.ЗаписатьСтроку("пояс: ${москва}")

@@ -1,4 +1,4 @@
-<Project Sdk="Pes.NET.Sdk/0.1.8">
+<Project Sdk="Pes.NET.Sdk/0.2.2">
 
 
   <PropertyGroup>
@@ -7,5 +7,10 @@
     <AssemblyName>TotpAuth</AssemblyName>
     <RootNamespace></RootNamespace>
   </PropertyGroup>
+
+
+  <ItemGroup>
+    <PackageReference Include="QRCoder" Version="1.8.0" />
+  </ItemGroup>
 
 </Project>
