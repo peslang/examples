@@ -1,11 +1,12 @@
 # Примеры языка Пес (публичные)
 
-Примеры для самостоятельной сборки через [Pes.NET.Sdk](https://www.nuget.org/packages/Pes.NET.Sdk) **0.2.2** с nuget.org.  
+Примеры для самостоятельной сборки через [Pes.NET.Sdk](https://www.nuget.org/packages/Pes.NET.Sdk) **0.2.3** с nuget.org.  
 SDK скачивается автоматически при сборке проекта.
 
 ## Требования
 
-- [.NET SDK 10](https://dotnet.microsoft.com/download)
+- [.NET SDK 10](https://dotnet.microsoft.com/download) (host для Pes.NET.Sdk)
+- Пользовательский `<TargetFramework>` в примерах — `net10.0`; поддерживается также `net8.0+`
 - Доступ к nuget.org (SDK подтягивается автоматически при первой сборке)
 
 ## Сборка и запуск
@@ -58,6 +59,8 @@ dotnet run --project controlflow/controlflow.psproj
 | [`HelloGtk/`](HelloGtk/), [`CalculatorGtk/`](CalculatorGtk/) | GTK, NuGet |
 | [`TotpAuth/`](TotpAuth/) | классы, TOTP, QR (NuGet QRCoder) |
 | [`EratosthenesSieve/`](EratosthenesSieve/) | массивы, циклы |
+| [`Dijkstra/`](Dijkstra/) | графы, алгоритм Дейкстры |
+| [`Wasm/`](Wasm/) | .NET WebAssembly (`browser-wasm`), браузер |
 
 
 # Песочница

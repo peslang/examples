@@ -1,0 +1,4 @@
+<Project>
+  <!-- После targets WebAssembly SDK: PesCompile из NuGet Pes.NET.Sdk -->
+  <Import Project="Pes.Compiler.targets" Sdk="Pes.NET.Sdk" Version="0.2.3" />
+</Project>
