@@ -1,6 +1,6 @@
 # Примеры языка Пес (публичные)
 
-Примеры для самостоятельной сборки через [Pes.NET.Sdk](https://www.nuget.org/packages/Pes.NET.Sdk) **0.2.3** с nuget.org.  
+Примеры для самостоятельной сборки через [Pes.NET.Sdk](https://www.nuget.org/packages/Pes.NET.Sdk) **0.2.9** с nuget.org.  
 SDK скачивается автоматически при сборке проекта.
 
 ## Требования
@@ -35,16 +35,18 @@ dotnet run --project controlflow/controlflow.psproj
 | [`strings/`](strings/) | строки | |
 | [`stringinterpolation/`](stringinterpolation/) | интерполяция | `%`, `$`, `${}` |
 | [`datetime/`](datetime/) | дата, время, момент, длительность | |
-| [`collections/`](collections/) | массивы, соответствия, LINQ | |
-| [`sets/`](sets/) | множества | литералы `{…}`, `ВоМножество` |
+| [`collections/`](collections/) | массивы, соответствия, LINQ, `Обходимое` / `породить` | |
+| [`sets/`](sets/) | множества | литералы `{…}`, `.ВМножество()` |
 | [`structures/`](structures/) | структуры, перечисления | |
-| [`generics/`](generics/) | обобщённые типы и методы | |
+| [`generics/`](generics/) | обобщенные типы и методы | |
 | [`extensions/`](extensions/) | методы расширения | LINQ, `расширение метод` |
 | [`functional/`](functional/) | лямбды | через `.КакПоследовательность()` |
-| [`exceptions/`](exceptions/) | исключения | `попытка` / `поймать` / `вконце` |
+| [`exceptions/`](exceptions/) | исключения | `попытка` / `поймать` / `вконце`, union `A\|B` |
 | [`scopes/`](scopes/) | области, импорт | + [`lib/Вспомогательный.pes`](scopes/lib/Вспомогательный.pes) |
 | [`types/`](types/) | системные типы | ууид / неизвестно — комментарии |
-| [`idioms/`](idioms/) | типовые приёмы | |
+| [`idioms/`](idioms/) | типовые приемы | |
+| [`iterators/`](iterators/) | `Обходимое`, `Обходчик`, `породить` | O-46 |
+| [`aliases/`](aliases/) | `@Алиас`, BCL `.pesmap` | O-38 |
 
 ## Дополнительные примеры
 

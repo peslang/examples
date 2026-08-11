@@ -1,6 +1,6 @@
 // Методы расширения для множеств — generic (O-28b); Collections.md §4.2
 // O-39: в теле extension только canonical CLR (Add/Contains), не алиасы .pesmap.
-// Call-site демо в Program.pes — через script-методы: generic+alias сейчас даёт InvalidProgram.
+// Call-site демо в Program.pes — через script-методы: generic+alias сейчас дает InvalidProgram.
 статический класс РасширенияМножества
     расширение метод Добавить<Т>(этот set: Множество<Т>, элемент: Т): ничто
         set.Add(элемент)

@@ -1,0 +1,11 @@
+<Project Sdk="Pes.NET.Sdk/0.2.9">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net10.0</TargetFramework>
+    <AssemblyName>aliases</AssemblyName>
+    <RootNamespace></RootNamespace>
+    <!-- BCL map подключается из SDK (EnablePesBclAliasMap=true по умолчанию) -->
+  </PropertyGroup>
+
+</Project>

@@ -1,6 +1,6 @@
 <Project Sdk="Microsoft.NET.Sdk.WebAssembly">
 
-  <Import Project="Pes.Compiler.props" Sdk="Pes.NET.Sdk" Version="0.2.3" />
+  <Import Project="Pes.Compiler.props" Sdk="Pes.NET.Sdk" Version="0.2.9" />
 
   <PropertyGroup>
     <TargetFramework>net10.0</TargetFramework>

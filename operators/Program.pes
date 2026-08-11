@@ -3,6 +3,7 @@
 //            secure-access-operation, exclamation-mark-operation, double-question-mark-operator,
 //            dot-operation, indexer-operator
 
+
 метод ДемоАрифметика(): ничто
     пер a: Число = 10
     пер b: Число = 3
@@ -39,8 +40,8 @@
 ;
 
 метод ДемоНовыйИДоступ(): ничто
-    пер dt = новый DateTime(2025, 7, 9)
-    пер year = dt.Year
+    пер dt = новый ДатаВремя(2025, 7, 9)
+    пер year = dt.Год
     пер arr = [10]
     arr.Добавить(20)
     Консоль.ЗаписатьСтроку("новый: ${year}, arr[1]=${arr[1]}")
