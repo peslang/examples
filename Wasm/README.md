@@ -10,7 +10,7 @@
 dotnet workload install wasm-tools
 ```
 
-Используется [Pes.NET.Sdk](https://www.nuget.org/packages/Pes.NET.Sdk) **0.2.9** с nuget.org (вместе с `Microsoft.NET.Sdk.WebAssembly`).
+Используется [Pes.NET.Sdk](https://www.nuget.org/packages/Pes.NET.Sdk) **0.2.10** с nuget.org (вместе с `Microsoft.NET.Sdk.WebAssembly`).
 
 ## Запуск
 
